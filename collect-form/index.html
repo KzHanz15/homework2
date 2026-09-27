@@ -22,7 +22,66 @@
     </section>
     <section id="form">
       <h2>招新报名表</h2>
-      <p>（表单下一步填在这里）</p>
+      <form action="#" method="get">
+        <p>
+          <label for="name">姓名</label>
+          <input type="text" id="name" name="name" placeholder="真实姓名" required>
+        </p>
+        <p>
+          <label for="sid">学号</label>
+          <input type="text" id="sid" name="sid" placeholder="10位数字学号"
+                 pattern="[0-9]{10}" required>
+        </p>
+        <p>
+          <label for="mail">邮箱</label>
+          <input type="email" id="mail" name="mail" placeholder="name@example.com" required>
+        </p>
+        <p>
+          <label for="grade">年级</label>
+          <select id="grade" name="grade" required>
+            <option value="">请选择</option>
+            <option value="1">大一</option>
+            <option value="2">大二</option>
+            <option value="3">大三</option>
+            <option value="4">大四</option>
+            <option value="5">研究生</option>
+          </select>
+        </p>
+        <p>性别</p>
+        <p>
+          <label><input type="radio" name="gender" value="male" required> 男</label>
+          <label><input type="radio" name="gender" value="female"> 女</label>
+          <label><input type="radio" name="gender" value="secret"> 不便透露</label>
+        </p>
+        <p>
+          <label for="birthday">出生日期</label>
+          <input type="date" id="birthday" name="birthday">
+        </p>
+        <p>
+          <label for="years">拍摄经验（年）</label>
+          <input type="number" id="years" name="years" min="0" max="10" value="0">
+        </p>
+        <p>感兴趣的方向（可多选）</p>
+        <p>
+          <label><input type="checkbox" name="interest" value="portrait"> 人像</label>
+          <label><input type="checkbox" name="interest" value="landscape"> 风光</label>
+          <label><input type="checkbox" name="interest" value="street"> 街拍</label>
+          <label><input type="checkbox" name="interest" value="event"> 活动纪实</label>
+        </p>
+        <p>
+          <label for="intro">自我介绍（200字以内）</label><br>
+          <textarea id="intro" name="intro" rows="4" maxlength="200"
+                    placeholder="说说你为什么想加入摄影社" required></textarea>
+        </p>
+        <p>
+          <label for="work">上传一张代表作品（可选）</label>
+          <input type="file" id="work" name="work" accept="image/*">
+        </p>
+        <p>
+          <button type="submit">提交报名</button>
+          <button type="reset">重置</button>
+        </p>
+      </form>
     </section>
   </main>
   <footer>
