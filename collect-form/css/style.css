@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  color: #2b2b2b;
+  line-height: 1.7;
+  background-color: #eef1f4;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+header {
+  background: #1f3a5f;
+  color: #fff;
+  text-align: center;
+  padding: 28px 16px;
+  border-radius: 12px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 26px;
+}
+
+header p {
+  margin: 0;
+  color: #cdd9e8;
+  font-size: 15px;
+}
+
+nav {
+  text-align: center;
+  margin: 16px 0;
+}
+
+nav a {
+  display: inline-block;
+  color: #1f3a5f;
+  text-decoration: none;
+  border: 1px solid #1f3a5f;
+  border-radius: 20px;
+  padding: 6px 20px;
+  margin: 0 6px;
+}
+
+nav a:hover {
+  background: #1f3a5f;
+  color: #fff;
+}
+
+section {
+  background: #fff;
+  border: 1px solid #d9dee5;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(31, 58, 95, 0.06);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #1f3a5f;
+  border-left: 4px solid #d98e4b;
+  padding-left: 10px;
+  font-size: 19px;
+}
+
+input, select, textarea, button {
+  font-size: 16px;
+  font-family: inherit;
+}
+
+input[type="text"], input[type="email"], input[type="number"],
+input[type="date"], select, textarea {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid #c4ccd6;
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #1f3a5f;
+  box-shadow: 0 0 0 3px rgba(31, 58, 95, 0.15);
+}
+
+form p {
+  margin: 12px 0;
+}
+
+button {
+  padding: 9px 28px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background: #d98e4b;
+  color: #fff;
+}
+
+button[type="reset"] {
+  background: #fff;
+  color: #555;
+  border: 1px solid #c4ccd6;
+  margin-left: 8px;
+}
+
+footer {
+  text-align: center;
+  color: #8a94a0;
+  font-size: 13px;
+  padding: 8px 0;
+}
